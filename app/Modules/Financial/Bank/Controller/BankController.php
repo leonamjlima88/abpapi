@@ -26,7 +26,6 @@ class BankController extends Controller
   
   public function destroy(int $id)
   {
-    $aux = 'teste';
     return $this->bankDestroyUseCase->execute($id) 
       ? Res::success (code: Response::HTTP_NO_CONTENT)
       : Res::error   (code: Response::HTTP_NOT_FOUND);
