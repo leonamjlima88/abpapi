@@ -12,8 +12,8 @@ class Cfop extends BaseEntity
     public string $name,
     public string $code,
     public CfopOperationTypeEnum|int|null $operation_type,
-    public ?string $created_at = '',
-    public ?string $updated_at = '',
+    public ?string $created_at = null,
+    public ?string $updated_at = null,
   ){
   }
   

@@ -10,8 +10,8 @@ class State extends BaseEntity
     public ?int $id = 0,
     public string $name,
     public string $abbreviation,
-    public ?string $created_at = '',
-    public ?string $updated_at = '',
+    public ?string $created_at = null,
+    public ?string $updated_at = null,
   ){
   }
   

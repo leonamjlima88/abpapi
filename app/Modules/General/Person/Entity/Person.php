@@ -42,9 +42,9 @@ class Person extends BaseEntity
     public bool $is_final_customer,
     public ?string $created_at = '',
     public ?string $updated_at = '',
-    public ?int $created_by_user_id = 0,
-    public ?int $updated_by_user_id = 0,
-    public ?int $tenant_id = 0,
+    public ?int $created_by_user_id = null,
+    public ?int $updated_by_user_id = null,
+    public ?int $tenant_id = null,
 
     /** @var PersonContactEntity[] */
     public ?array $person_contact,

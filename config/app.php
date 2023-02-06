@@ -202,6 +202,7 @@ return [
         App\Modules\Stock\Unit\Provider\UnitProvider::class,
         App\Modules\Stock\StorageLocation\Provider\StorageLocationProvider::class,
         App\Modules\Stock\Ncm\Provider\NcmProvider::class,        
+        App\Modules\Stock\Product\Provider\ProductProvider::class,        
         App\Modules\General\State\Provider\StateProvider::class,
         App\Modules\General\City\Provider\CityProvider::class,
         App\Modules\General\Tenant\Provider\TenantProvider::class,

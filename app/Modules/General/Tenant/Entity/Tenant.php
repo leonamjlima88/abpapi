@@ -28,8 +28,8 @@ class Tenant extends BaseEntity
     public ?string $financial_email = '',
     public ?string $internet_page = '',
     public ?string $note = '',
-    public ?string $created_at = '',
-    public ?string $updated_at = '',
+    public ?string $created_at = null,
+    public ?string $updated_at = null,
     public City|array|null $city,
   ){
   }
