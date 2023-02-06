@@ -16,11 +16,11 @@ class PaymentTerm extends BaseEntity
     public ?int $interval_between_installments = 0,
     public int $bank_account_id,
     public int $document_id,
-    public ?string $created_at = '',
-    public ?string $updated_at = '',
-    public ?int $created_by_user_id = 0,
-    public ?int $updated_by_user_id = 0,
-    public ?int $tenant_id = 0,
+    public ?string $created_at = null,
+    public ?string $updated_at = null,
+    public ?int $created_by_user_id = null,
+    public ?int $updated_by_user_id = null,
+    public ?int $tenant_id = null,
 
     // Campo virtual
     public BankAccount|array|null $bank_account,

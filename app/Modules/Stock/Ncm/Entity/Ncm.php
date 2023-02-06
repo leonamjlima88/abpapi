@@ -17,8 +17,8 @@ class Ncm extends BaseEntity
     public ?string $additional_information = '',
     public ?string $start_of_validity = '',
     public ?string $end_of_validity = '',
-    public ?string $created_at = '',
-    public ?string $updated_at = '',
+    public ?string $created_at = null,
+    public ?string $updated_at = null,
   ){
   }
   
