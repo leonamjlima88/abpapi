@@ -1,0 +1,78 @@
+[2023-02-05 03:36:33] local.WARNING: aaaaaaaaaaaaaaaaaa  
+[2023-02-05 03:39:01] local.WARNING: aaaaaaaaaaaaaaaaaa  
+[2023-02-05 03:42:42] local.WARNING: aaaaaaaaaaaaaaaaaa  
+[2023-02-05 03:45:16] local.WARNING: aaaaaaaaaaaaaaaaaa  
+[2023-02-05 03:50:38] local.WARNING: aaaaaaaaaaaaaaaaaa  
+[2023-02-05 03:54:01] local.ERROR: Class "Logger\Laravel\Provider\MonologMysqlHandlerServiceProvider" not found {"exception":"[object] (Error(code: 0): Class \"Logger\\Laravel\\Provider\\MonologMysqlHandlerServiceProvider\" not found at /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(666): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(242): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(383): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /var/www/study/abpapi/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2023-02-05 03:55:19] local.ERROR: Class "Logger\Laravel\Provider\MonologMysqlHandlerServiceProvider" not found {"exception":"[object] (Error(code: 0): Class \"Logger\\Laravel\\Provider\\MonologMysqlHandlerServiceProvider\" not found at /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(666): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(242): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(383): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /var/www/study/abpapi/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2023-02-05 03:56:08] local.ERROR: Class "Logger\Laravel\Provider\MonologMysqlHandlerServiceProvider" not found {"exception":"[object] (Error(code: 0): Class \"Logger\\Laravel\\Provider\\MonologMysqlHandlerServiceProvider\" not found at /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(666): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(242): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(383): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(153): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /var/www/study/abpapi/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2023-02-05 03:59:12] local.ERROR: Cannot declare class CreateLogsTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class CreateLogsTable, because the name is already in use at /var/www/study/abpapi/database/migrations/create_logs_table.php:6)
+[stacktrace]
+#0 {main}
+"} 
+[2023-02-05 03:59:18] local.ERROR: Cannot declare class CreateLogsTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class CreateLogsTable, because the name is already in use at /var/www/study/abpapi/database/migrations/create_logs_table.php:6)
+[stacktrace]
+#0 {main}
+"} 
+[2023-02-05 04:00:16] local.ERROR: Cannot declare class CreateLogsTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class CreateLogsTable, because the name is already in use at /var/www/study/abpapi/database/migrations/create_logs_table.php:6)
+[stacktrace]
+#0 {main}
+"} 
+[2023-02-05 04:00:42] local.ERROR: Cannot declare class CreateLogsTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class CreateLogsTable, because the name is already in use at /var/www/study/abpapi/database/migrations/create_logs_table.php:6)
+[stacktrace]
+#0 {main}
+"} 
+[2023-02-05 04:00:58] local.ERROR: Cannot declare class CreateLogsTable, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class CreateLogsTable, because the name is already in use at /var/www/study/abpapi/database/migrations/create_logs_table.php:6)
+[stacktrace]
+#0 {main}
+"} 
+[2023-02-05 04:05:18] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Logger\\Monolog\\Handler\\MysqlHandler must be an instance of Monolog\\Handler\\HandlerInterface at /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:382)
+[stacktrace]
+#0 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(220): Illuminate\\Log\\LogManager->createMonologDriver(Array)
+#1 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(135): Illuminate\\Log\\LogManager->resolve('mysql', Array)
+#2 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(122): Illuminate\\Log\\LogManager->get('mysql')
+#3 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(645): Illuminate\\Log\\LogManager->driver()
+#4 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(274): Illuminate\\Log\\LogManager->error('Declaration of ...', Array)
+#5 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(198): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#6 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#8 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}()
+#9 {main}
+"} 
+[2023-02-05 04:05:18] laravel.ERROR: Declaration of Logger\Monolog\Handler\MysqlHandler::write(array $record) must be compatible with Monolog\Handler\AbstractProcessingHandler::write(array $record): void {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Declaration of Logger\\Monolog\\Handler\\MysqlHandler::write(array $record) must be compatible with Monolog\\Handler\\AbstractProcessingHandler::write(array $record): void at /var/www/study/abpapi/vendor/markhilton/monolog-mysql/src/Logger/Monolog/Handler/MysqlHandler.php:23)
+[stacktrace]
+#0 {main}
+"} 
