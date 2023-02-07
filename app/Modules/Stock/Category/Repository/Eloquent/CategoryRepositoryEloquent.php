@@ -29,7 +29,7 @@ class CategoryRepositoryEloquent extends BaseRepositoryEloquent implements Categ
     return CategoryMapper::mapArrayToEntity($model->toArray());
   }
 
-  public function defaultQuery(): Builder
+  public function defaultQuery(?bool $defaultRelations = true): Builder
   {
     return $this->model->query();
   }

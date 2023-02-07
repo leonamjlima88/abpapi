@@ -29,7 +29,7 @@ class CfopRepositoryEloquent extends BaseRepositoryEloquent implements CfopRepos
     return CfopMapper::mapArrayToEntity($model->toArray());
   }
 
-  public function defaultQuery(): Builder
+  public function defaultQuery(?bool $defaultRelations = true): Builder
   {
     return $this->model->query();
   }

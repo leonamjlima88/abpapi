@@ -29,7 +29,7 @@ class OperationTypeRepositoryEloquent extends BaseRepositoryEloquent implements 
     return OperationTypeMapper::mapArrayToEntity($model->toArray());
   }
 
-  public function defaultQuery(): Builder
+  public function defaultQuery(?bool $defaultRelations = true): Builder
   {
     return $this->model->query();
   }

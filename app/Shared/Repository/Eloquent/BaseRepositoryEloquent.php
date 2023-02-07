@@ -18,7 +18,7 @@ abstract class BaseRepositoryEloquent implements BaseRepositoryInterface
   protected bool $inTransaction = true;
   public function __construct(private Model $model){}  
   
-  abstract public function defaultQuery(): Builder;
+  abstract public function defaultQuery(?bool $defaultRelations = true): Builder;
   abstract public function modelToEntity(Model $model): BaseEntity;
 
   public function getIndex(Builder $query, ?string $columns = '', string $order_by = '', ?int $limit = 0, ?int $page = 0): array 

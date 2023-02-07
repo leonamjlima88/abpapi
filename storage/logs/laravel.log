@@ -131,3 +131,21 @@
 [stacktrace]
 #0 {main}
 "} 
+[2023-02-07 18:56:22] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class \"Logger\\Monolog\\Handler\\MysqlHandler\" not found at /var/www/study/abpapi/app/Logging/CreateMySQLLogger.php:21)
+[stacktrace]
+#0 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(247): App\\Logging\\CreateMySQLLogger->__invoke(Array)
+#1 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(220): Illuminate\\Log\\LogManager->createCustomDriver(Array)
+#2 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(135): Illuminate\\Log\\LogManager->resolve('mysql', Array)
+#3 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(122): Illuminate\\Log\\LogManager->get('mysql')
+#4 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(645): Illuminate\\Log\\LogManager->driver()
+#5 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(274): Illuminate\\Log\\LogManager->error('Declaration of ...', Array)
+#6 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(198): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#7 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(242): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\ErrorHandler\\Error\\FatalError))
+#8 /var/www/study/abpapi/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(266): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#9 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}()
+#10 {main}
+"} 
+[2023-02-07 18:56:22] laravel.ERROR: Declaration of Logger\Monolog\Handler\MysqlHandler::write(array $record) must be compatible with Monolog\Handler\AbstractProcessingHandler::write(array $record): void {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Declaration of Logger\\Monolog\\Handler\\MysqlHandler::write(array $record) must be compatible with Monolog\\Handler\\AbstractProcessingHandler::write(array $record): void at /var/www/study/abpapi/vendor/markhilton/monolog-mysql/src/Logger/Monolog/Handler/MysqlHandler.php:23)
+[stacktrace]
+#0 {main}
+"} 

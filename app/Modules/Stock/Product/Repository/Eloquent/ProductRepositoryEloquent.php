@@ -26,12 +26,34 @@ class ProductRepositoryEloquent extends BaseRepositoryEloquent implements Produc
    */
   public function modelToEntity(Model $model): BaseEntity 
   {
+    $model->load([
+      'unit',
+      'ncm',
+      'category',
+      'brand',
+      'size',
+      'storageLocation'
+    ]);
+
     return ProductMapper::mapArrayToEntity($model->toArray());
   }
 
-  public function defaultQuery(): Builder
+  public function defaultQuery(?bool $defaultRelations = true): Builder
   {
-    return $this->model->query();
+    $query = $this->model->query();
+    
+    // Relações default da model
+    if ($defaultRelations){
+      $query->with([
+        'unit',
+        'ncm',
+        'category',
+        'brand',
+        'size',
+        'storageLocation',
+      ]);
+    }
+    return $query;
   }
 
   public function index(?ProductFilter $productFilter = null): array

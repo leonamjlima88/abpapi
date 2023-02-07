@@ -29,7 +29,7 @@ class DocumentRepositoryEloquent extends BaseRepositoryEloquent implements Docum
     return DocumentMapper::mapArrayToEntity($model->toArray());
   }
 
-  public function defaultQuery(): Builder
+  public function defaultQuery(?bool $defaultRelations = true): Builder
   {
     return $this->model->query();
   }

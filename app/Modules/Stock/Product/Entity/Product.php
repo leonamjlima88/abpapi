@@ -2,6 +2,12 @@
 
 namespace App\Modules\Stock\Product\Entity;
 
+use App\Modules\Stock\Brand\Entity\Brand;
+use App\Modules\Stock\Category\Entity\Category;
+use App\Modules\Stock\Ncm\Entity\Ncm;
+use App\Modules\Stock\Size\Entity\Size;
+use App\Modules\Stock\StorageLocation\Entity\StorageLocation;
+use App\Modules\Stock\Unit\Entity\Unit;
 use App\Shared\Entity\BaseEntity;
 
 class Product extends BaseEntity
@@ -41,6 +47,24 @@ class Product extends BaseEntity
     public ?int $created_by_user_id = null,
     public ?int $updated_by_user_id = null,
     public ?int $tenant_id = null,
+
+    // Campo virtual
+    public Unit|array|null $unit,
+
+    // Campo virtual
+    public Ncm|array|null $ncm,
+
+    // Campo virtual
+    public Category|array|null $category,
+
+    // Campo virtual
+    public Brand|array|null $brand,
+
+    // Campo virtual
+    public Size|array|null $size,
+
+    // Campo virtual
+    public StorageLocation|array|null $storage_location,
   ){
   }
   
