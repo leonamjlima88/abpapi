@@ -114,6 +114,30 @@ class ProductDto extends Data
 
     #[Rule('nullable|integer')]
     public ?int $tenant_id,
+
+    // Campo virtual
+    #[Rule('nullable')]
+    public object|array|null $unit,
+
+    // Campo virtual
+    #[Rule('nullable')]
+    public object|array|null $ncm,
+
+    // Campo virtual
+    #[Rule('nullable')]
+    public object|array|null $category,
+
+    // Campo virtual
+    #[Rule('nullable')]
+    public object|array|null $brand,
+
+    // Campo virtual
+    #[Rule('nullable')]
+    public object|array|null $size,
+
+    // Campo virtual
+    #[Rule('nullable')]
+    public object|array|null $storage_location,
   ){
   }
 }

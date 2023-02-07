@@ -30,10 +30,17 @@ class BankAccountRepositoryEloquent extends BaseRepositoryEloquent implements Ba
     return BankAccountMapper::mapArrayToEntity($model->toArray());
   }
 
-  public function defaultQuery(): Builder
+  public function defaultQuery(?bool $defaultRelations = true): Builder
   {
-    return $this->model->query()
-      ->with(['bank']);
+    $query = $this->model->query();
+    
+    // Relações default da model
+    if ($defaultRelations){
+      $query->with([
+        'bank',
+      ]);
+    }
+    return $query;  
   }
 
   public function index(?BankAccountFilter $bank_accountFilter = null): array

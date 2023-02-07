@@ -29,7 +29,7 @@ class UnitRepositoryEloquent extends BaseRepositoryEloquent implements UnitRepos
     return UnitMapper::mapArrayToEntity($model->toArray());
   }
 
-  public function defaultQuery(): Builder
+  public function defaultQuery(?bool $defaultRelations = true): Builder
   {
     return $this->model->query();
   }

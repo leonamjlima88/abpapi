@@ -36,10 +36,17 @@ class PersonRepositoryEloquent extends BaseRepositoryEloquent implements PersonR
     return PersonMapper::mapArrayToEntity($model->toArray());
   }
 
-  public function defaultQuery(): Builder
+  public function defaultQuery(?bool $defaultRelations = true): Builder
   {
-    return $this->model->query()
-      ->with(['city', 'city.state']);
+    $query = $this->model->query();
+    
+    // Relações default da model
+    if ($defaultRelations){
+      $query->with([
+        'city.state'
+      ]);
+    }
+    return $query;
   }
 
   public function index(?PersonFilter $personFilter = null): array

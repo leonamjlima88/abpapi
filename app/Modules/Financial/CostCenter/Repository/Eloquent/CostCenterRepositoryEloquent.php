@@ -29,7 +29,7 @@ class CostCenterRepositoryEloquent extends BaseRepositoryEloquent implements Cos
     return CostCenterMapper::mapArrayToEntity($model->toArray());
   }
 
-  public function defaultQuery(): Builder
+  public function defaultQuery(?bool $defaultRelations = true): Builder
   {
     return $this->model->query();
   }

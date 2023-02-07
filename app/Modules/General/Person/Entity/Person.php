@@ -53,7 +53,7 @@ class Person extends BaseEntity
     public ?array $person_address,
 
     // Campo virtual
-    public City|array|null $city,    
+    public City|array|null $city,
   ){
   }
   

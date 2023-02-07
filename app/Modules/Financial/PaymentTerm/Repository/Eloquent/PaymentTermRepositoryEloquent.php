@@ -33,13 +33,18 @@ class PaymentTermRepositoryEloquent extends BaseRepositoryEloquent implements Pa
     return PaymentTermMapper::mapArrayToEntity($model->toArray());
   }
 
-  public function defaultQuery(): Builder
+  public function defaultQuery(?bool $defaultRelations = true): Builder
   {
-    return $this->model->query()
-      ->with([
-        'bankAccount', 
-        'document'
+    $query = $this->model->query();
+    
+    // Relações default da model
+    if ($defaultRelations){
+      $query->with([
+        'bankAccount',
+        'document',
       ]);
+    }
+    return $query;
   }
 
   public function index(?PaymentTermFilter $payment_termFilter = null): array

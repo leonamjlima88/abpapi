@@ -29,7 +29,7 @@ class SizeRepositoryEloquent extends BaseRepositoryEloquent implements SizeRepos
     return SizeMapper::mapArrayToEntity($model->toArray());
   }
 
-  public function defaultQuery(): Builder
+  public function defaultQuery(?bool $defaultRelations = true): Builder
   {
     return $this->model->query();
   }

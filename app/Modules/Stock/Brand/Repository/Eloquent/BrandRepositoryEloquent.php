@@ -29,7 +29,7 @@ class BrandRepositoryEloquent extends BaseRepositoryEloquent implements BrandRep
     return BrandMapper::mapArrayToEntity($model->toArray());
   }
 
-  public function defaultQuery(): Builder
+  public function defaultQuery(?bool $defaultRelations = true): Builder
   {
     return $this->model->query();
   }

@@ -29,10 +29,17 @@ class CityRepositoryEloquent extends BaseRepositoryEloquent implements CityRepos
     return CityMapper::mapArrayToEntity($model->toArray());
   }
 
-  public function defaultQuery(): Builder
+  public function defaultQuery(?bool $defaultRelations = true): Builder
   {
-    return $this->model->query()
-      ->with('state');
+    $query = $this->model->query();
+    
+    // Relações default da model
+    if ($defaultRelations){
+      $query->with([
+        'state',
+      ]);
+    }
+    return $query;
   }
 
   public function index(?CityFilter $cityFilter = null): array
